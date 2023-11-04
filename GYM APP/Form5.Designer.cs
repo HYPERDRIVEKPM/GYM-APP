@@ -30,7 +30,7 @@
         {
             dataGridView1 = new DataGridView();
             label1 = new Label();
-            MemberIDtxtbox = new TextBox();
+            IDtxtbox = new TextBox();
             Viewbtn = new Button();
             Cancelbtn = new Button();
             Backbtn = new Button();
@@ -59,12 +59,12 @@
             label1.TabIndex = 1;
             label1.Text = "Member ID : ";
             // 
-            // MemberIDtxtbox
+            // IDtxtbox
             // 
-            MemberIDtxtbox.Location = new Point(12, 92);
-            MemberIDtxtbox.Name = "MemberIDtxtbox";
-            MemberIDtxtbox.Size = new Size(154, 23);
-            MemberIDtxtbox.TabIndex = 2;
+            IDtxtbox.Location = new Point(12, 92);
+            IDtxtbox.Name = "IDtxtbox";
+            IDtxtbox.Size = new Size(154, 23);
+            IDtxtbox.TabIndex = 2;
             // 
             // Viewbtn
             // 
@@ -85,6 +85,7 @@
             Cancelbtn.TabIndex = 3;
             Cancelbtn.Text = "Cancel";
             Cancelbtn.UseVisualStyleBackColor = true;
+            Cancelbtn.Click += Cancelbtn_Click;
             // 
             // Backbtn
             // 
@@ -95,6 +96,7 @@
             Backbtn.TabIndex = 3;
             Backbtn.Text = "Back";
             Backbtn.UseVisualStyleBackColor = true;
+            Backbtn.Click += Backbtn_Click;
             // 
             // label2
             // 
@@ -136,7 +138,7 @@
             Controls.Add(Paymenttxtbox);
             Controls.Add(Viewbtn);
             Controls.Add(label2);
-            Controls.Add(MemberIDtxtbox);
+            Controls.Add(IDtxtbox);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Name = "Payment";
@@ -152,7 +154,7 @@
 
         private DataGridView dataGridView1;
         private Label label1;
-        private TextBox MemberIDtxtbox;
+        private TextBox IDtxtbox;
         private Button Viewbtn;
         private Button Cancelbtn;
         private Button Backbtn;

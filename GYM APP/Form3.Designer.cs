@@ -72,6 +72,7 @@
             Viewbtn.TabIndex = 3;
             Viewbtn.Text = "View";
             Viewbtn.UseVisualStyleBackColor = true;
+            Viewbtn.Click += Viewbtn_Click;
             // 
             // Cancelbtn
             // 
@@ -82,6 +83,7 @@
             Cancelbtn.TabIndex = 3;
             Cancelbtn.Text = "Cancel";
             Cancelbtn.UseVisualStyleBackColor = true;
+            Cancelbtn.Click += Cancelbtn_Click;
             // 
             // Backbtn
             // 
@@ -92,6 +94,7 @@
             Backbtn.TabIndex = 3;
             Backbtn.Text = "Back";
             Backbtn.UseVisualStyleBackColor = true;
+            Backbtn.Click += Backbtn_Click;
             // 
             // ViewMember
             // 
@@ -107,6 +110,7 @@
             Controls.Add(MemberIDtxtbox);
             Name = "ViewMember";
             Text = "View Member";
+            Load += ViewMember_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
