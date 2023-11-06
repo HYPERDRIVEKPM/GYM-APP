@@ -115,6 +115,7 @@
             Controls.Add(Viewmemberbtn);
             Name = "Mainmenu";
             Text = "Backbtn";
+            Load += Mainmenu_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -19,7 +19,21 @@ namespace GYM_APP
 
         private void Payment_Load(object sender, EventArgs e)
         {
+            IDtxtbox.Text = "";
+            Paymenttxtbox.Text = "";
+        }
 
+        private void Backbtn_Click(object sender, EventArgs e)
+        {
+            Mainmenu mainmenu = new Mainmenu();
+            mainmenu.Show();
+            this.Hide();
+        }
+
+        private void Cancelbtn_Click(object sender, EventArgs e)
+        {
+            IDtxtbox.Text = "";
+            Paymenttxtbox.Text = "";
         }
     }
 }

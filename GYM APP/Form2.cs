@@ -49,5 +49,10 @@ namespace GYM_APP
         {
             MessageBox.Show("Gate Opened!", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void Mainmenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
