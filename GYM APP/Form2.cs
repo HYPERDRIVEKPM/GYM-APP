@@ -47,12 +47,23 @@ namespace GYM_APP
 
         private void Gatebtn_Click(object sender, EventArgs e)
         {
+
             MessageBox.Show("Gate Opened!", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Mainmenu_Load(object sender, EventArgs e)
         {
+            timer1.Start();
+        }
 
+        private void Loggedinlabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Loggedinlabel.Text = DateTime.Now.ToString();
         }
     }
 }

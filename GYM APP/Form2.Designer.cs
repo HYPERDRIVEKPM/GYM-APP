@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Viewmemberbtn = new Button();
             Addmemberbtn = new Button();
             Paymentbtn = new Button();
             Gatebtn = new Button();
             Backbtn = new Button();
             label1 = new Label();
+            Loggedinlabel = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // Viewmemberbtn
@@ -101,12 +105,28 @@
             label1.TabIndex = 1;
             label1.Text = "GYM MANAGEMENT SYSTEM";
             // 
+            // Loggedinlabel
+            // 
+            Loggedinlabel.AutoSize = true;
+            Loggedinlabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Loggedinlabel.Location = new Point(628, 31);
+            Loggedinlabel.Name = "Loggedinlabel";
+            Loggedinlabel.Size = new Size(0, 17);
+            Loggedinlabel.TabIndex = 1;
+            Loggedinlabel.Click += Loggedinlabel_Click;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
             // Mainmenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(Loggedinlabel);
             Controls.Add(label1);
             Controls.Add(Backbtn);
             Controls.Add(Gatebtn);
@@ -114,7 +134,8 @@
             Controls.Add(Addmemberbtn);
             Controls.Add(Viewmemberbtn);
             Name = "Mainmenu";
-            Text = "Backbtn";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Main Menu";
             Load += Mainmenu_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -128,5 +149,8 @@
         private Button Gatebtn;
         private Button Backbtn;
         private Label label1;
+        private Label Loggedinlabel;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

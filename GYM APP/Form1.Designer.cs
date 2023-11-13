@@ -53,7 +53,7 @@
             Loginbtn.Location = new Point(267, 279);
             Loginbtn.Name = "Loginbtn";
             Loginbtn.Size = new Size(96, 30);
-            Loginbtn.TabIndex = 1;
+            Loginbtn.TabIndex = 2;
             Loginbtn.Text = "Login";
             Loginbtn.UseVisualStyleBackColor = true;
             Loginbtn.Click += button1_Click;
@@ -64,7 +64,7 @@
             Cancelbtn.Location = new Point(383, 279);
             Cancelbtn.Name = "Cancelbtn";
             Cancelbtn.Size = new Size(92, 30);
-            Cancelbtn.TabIndex = 1;
+            Cancelbtn.TabIndex = 3;
             Cancelbtn.Text = "Cancel";
             Cancelbtn.UseVisualStyleBackColor = true;
             Cancelbtn.Click += button2_Click;
@@ -74,14 +74,14 @@
             Passwordtxtbox.Location = new Point(267, 250);
             Passwordtxtbox.Name = "Passwordtxtbox";
             Passwordtxtbox.Size = new Size(208, 23);
-            Passwordtxtbox.TabIndex = 2;
+            Passwordtxtbox.TabIndex = 1;
             // 
             // Empidtxtbox
             // 
             Empidtxtbox.Location = new Point(267, 190);
             Empidtxtbox.Name = "Empidtxtbox";
             Empidtxtbox.Size = new Size(208, 23);
-            Empidtxtbox.TabIndex = 2;
+            Empidtxtbox.TabIndex = 0;
             // 
             // label2
             // 
